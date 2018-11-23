@@ -1,0 +1,33 @@
+<p>
+  c25improovngmodel works!
+</p>
+
+Enter something: 
+<input type="text" name="txtName" [(ngModel)]="unm" [ngModelOptions]="{updateOn:'blur'}"/><br>
+you entered is {{unm}}
+<br>
+
+
+(we dont want to create unm variable inside ts file )
+(change on blur)
+Enter something : 
+<input type="text" name="txtAdd" #searchVal (change)="0"/><br>
+you entered is {{searchVal.value}}
+<br>
+
+
+(change simultaneously )
+
+Enter something : 
+<input type="text" name="txtDept" #searchVal1 (keypress)="0"/><br>
+you entered is {{searchVal1.value}}
+
+passsing searchval1 to function inside ts 
+<button (click)="fun(searchVal1.value)">click me</button>
+variable from ts file  {{str}}
+<br>
+
+(one more tech  to send template refrence variable to ts file)
+<br>
+Enter something
+<input type="text" namt="txtCourse" #searchVal2 (change)="fun2(searchVal2.value)"/><br>
