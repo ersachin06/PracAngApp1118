@@ -1,2 +1,52 @@
 <!-- <app-c7inbuiltpipes></app-c7inbuiltpipes> -->
-<app-c25improovngmodel></app-c25improovngmodel>
+ <app-c25improovngmodel></app-c25improovngmodel> 
+ <div class="container">
+     <!-- header starts here -->
+    <div class="row">
+        <header class="col-md-12">
+            <img src="..\assets\images/headerimage.png" />
+        </header>
+    </div>    
+    <!-- header ends here -->
+    <!-- navigation starts here -->
+    <div class="row">
+        <div class="col-md-12">
+            <nav >
+                <ul class="nav nav-tabs justify-content-end ">
+                    <li><a class="nav-link" href="">Home</a></li>
+                    <li><a class="nav-link" [routerLink]="['/portal']" routerLinkActive="active" >Portal</a></li>
+                     
+                    <li> <a class="nav-link" [routerLink]="['/teacher']">Teacher</a></li>
+                    <li> <a class="nav-link" [routerLink]="['/student']" routerLinkActive="active" >Student</a></li>
+                    <li><a class="nav-link" [routerLink]="['/tdf']" routerLinkActive="active" >tdf</a></li>
+                    <li><a class="nav-link" [routerLink]="['/tdfValidation']" routerLinkActive="active" >tdf Validations</a></li>
+                </ul>
+            </nav>
+            
+        </div>
+    </div>
+    <!-- navigation ends here -->
+
+<!-- main content start here -->
+    <div class="row">
+        <div class="col-md-4">
+            <ul class="nav nav-tabs flex-column">
+                    
+                <li><a class="nav-link" [routerLink]="['/reactiveForms']" routerLinkActive="active" >reactive forms</a></li>
+                <li><a class="nav-link" href="">Mango</a></li>
+            </ul>
+        </div>
+        <div class="col-md-8 main-content"  >
+            <router-outlet></router-outlet>
+            </div>
+    </div>
+    <!-- main content ends here -->
+    <!-- footer starts here -->
+    <div class="row">
+            <footer class="col-md-12 footer" >
+               <p class="text-center"> copyright@icsdtechlabs 2024</p>
+            </footer>
+        </div>
+        <!-- footer ends here -->
+</div>
+    

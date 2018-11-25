@@ -1,0 +1,50 @@
+<h1><p class="text-centered">Template Driven Form</p></h1>
+<form #userForm="ngForm" (ngSubmit)="fun(userForm.value)">
+  <div class="form-group">
+      <label>Enter Name: </label>
+      <input type="text" name="txtName" class="form-control" ngModel/>
+  </div>
+  <div class="form-group">
+    <label>Enter Username: </label>
+    <input type="text" #nameRef="ngModel" name="txtUnm" required class="form-control" ngModel/>
+    {{nameRef.className}}
+    <div [hidden]="nameRef.valid" class="alet alert-warning">
+      please enter username
+    </div>
+</div>
+
+<div class="form-group">
+  <label>Enter Email: </label>
+  <input type="text" #nameRef2="ngModel" required name="txtEmail" class="form-control" ngModel/>
+  <div [hidden]="nameRef2.valid " class="alert alert-danger">
+    please enter email
+  </div>
+
+</div>
+
+<div class="form-group">
+  <label>Enter city: </label>
+  <input type="text" #nameRef3="ngModel" minlength="3" name="txtCity" required class="form-control" ngModel/>
+  <div [hidden]="nameRef3.valid" class="alert alert-danger">
+      please enter min 3 char
+  </div>
+</div>
+<div ngModelGroup="address">
+    <div class="form-group">
+        <label>Enter Street: </label>
+        <input type="text" name="txtStreet" class="form-control" ngModel/>
+      </div>
+    <div class="form-group">
+          <label>Enter HouseNo: </label>
+          <input type="text" name="txtHno" class="form-control" ngModel/>
+    </div>
+
+</div>
+
+<div class="form-group">
+  <input type="submit" value="Submit" name="btnSubmit" [disabled]="userForm.form.invalid" class="btn btn-primary"/>
+  <button class="btn btn-success float-right" name="btnDashboard" >Dashboard</button>
+</div>
+</form>
+
+<pre> {{data|json}}  </pre>

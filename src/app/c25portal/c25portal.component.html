@@ -1,3 +1,9 @@
-<p>
-  c25portal works!
-</p>
+<h1>Welcome to Portal</h1>
+<app-student></app-student>
+<!-- <app-teacher></app-teacher> -->
+
+<ng-container *ngComponentOutlet="dynamicComponent">
+
+</ng-container>
+
+<button (click)="onbtnClick()" class="btn btn-primary">Click btn</button>

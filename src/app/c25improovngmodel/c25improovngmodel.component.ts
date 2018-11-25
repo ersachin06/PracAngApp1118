@@ -19,8 +19,10 @@ export class C25improovngmodelComponent implements OnInit {
     this.str=str;
     alert("btn clicked "+ str);
   }
+  str2:string;
   fun2(str:string)
   {
-    alert("key pressed txt course typed and data typed is : "+ str);
+    this.str2=str;
+    alert("key pressed txt course typed and data typed is : "+ this.str2);
   }
 }

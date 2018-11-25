@@ -1,0 +1,39 @@
+<h1><p class="text-centered">Template Driven Form</p></h1>
+<form #userForm="ngForm" (ngSubmit)="fun(userForm.value)">
+  <div class="form-group">
+      <label>Enter Name: </label>
+      <input type="text" name="txtName" class="form-control" ngModel/>
+  </div>
+  <div class="form-group">
+    <label>Enter Username: </label>
+    <input type="text" name="txtUnm" class="form-control" ngModel/>
+</div>
+
+<div class="form-group">
+  <label>Enter Email: </label>
+  <input type="text" name="txtEmail" class="form-control" ngModel/>
+</div>
+
+<div class="form-group">
+  <label>Enter city: </label>
+  <input type="text" name="txtCity" class="form-control" ngModel/>
+</div>
+<div ngModelGroup="address">
+    <div class="form-group">
+        <label>Enter Street: </label>
+        <input type="text" name="txtStreet" class="form-control" ngModel/>
+      </div>
+    <div class="form-group">
+          <label>Enter HouseNo: </label>
+          <input type="text" name="txtHno" class="form-control" ngModel/>
+    </div>
+
+</div>
+
+<div class="form-group">
+  <input type="submit" value="Submit" name="btnSubmit" class="btn btn-primary"/>
+  <button class="btn btn-success float-right" name="btnDashboard" >Dashboard</button>
+</div>
+</form>
+
+<pre> {{data|json}}  </pre>
