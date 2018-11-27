@@ -6,7 +6,7 @@ import {C26TemplateDrivenFormComponent} from './c26-template-driven-form/c26-tem
 import {C27TDFValidationComponent} from './c27-tdfvalidation/c27-tdfvalidation.component';
 import {C28ReactiveFormsComponent} from './c28-reactive-forms/c28-reactive-forms.component';
 import {C31NgcontentHomeComponent} from './c31-ngcontent-home/c31-ngcontent-home.component';
-
+import {C32SourceSendingObjComponent} from './c32-source-sending-obj/c32-source-sending-obj.component';
 export const routes:Routes=[
 
     {path:'portal',component:C25portalComponent},
@@ -15,6 +15,8 @@ export const routes:Routes=[
     {path:'tdf',component:C26TemplateDrivenFormComponent},
     {path:'tdfValidation',component:C27TDFValidationComponent},
     {path:'reactiveForms',component:C28ReactiveFormsComponent},
-    {path:'ngContentHome',component:C31NgcontentHomeComponent}
+    {path:'ngContentHome',component:C31NgcontentHomeComponent},
+    {path:'sourceSendingObj',component:C32SourceSendingObjComponent}
+    
     
 ];
