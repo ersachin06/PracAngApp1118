@@ -14,6 +14,11 @@ import {routes} from './Routes';
 import { C26TemplateDrivenFormComponent } from './c26-template-driven-form/c26-template-driven-form.component';
 import { C27TDFValidationComponent } from './c27-tdfvalidation/c27-tdfvalidation.component';
 import { C28ReactiveFormsComponent } from './c28-reactive-forms/c28-reactive-forms.component';
+import { C29ParentComponent } from './c29-parent/c29-parent.component';
+import { C30ChildNgcontentComponent } from './c30-child-ngcontent/c30-child-ngcontent.component';
+import { C31NgcontentHomeComponent } from './c31-ngcontent-home/c31-ngcontent-home.component';
+import { C32SourceSendingObjComponent } from './c32-source-sending-obj/c32-source-sending-obj.component';
+import { C33DstRcvObjQueryStringComponent } from './c33-dst-rcv-obj-query-string/c33-dst-rcv-obj-query-string.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,6 +30,11 @@ import { C28ReactiveFormsComponent } from './c28-reactive-forms/c28-reactive-for
     C26TemplateDrivenFormComponent,
     C27TDFValidationComponent,
     C28ReactiveFormsComponent,
+    C29ParentComponent,
+    C30ChildNgcontentComponent,
+    C31NgcontentHomeComponent,
+    C32SourceSendingObjComponent,
+    C33DstRcvObjQueryStringComponent,
     
   ],
   imports: [

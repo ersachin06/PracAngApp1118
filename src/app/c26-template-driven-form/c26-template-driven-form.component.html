@@ -1,8 +1,14 @@
 <h1><p class="text-centered">Template Driven Form</p></h1>
-<form #userForm="ngForm" (ngSubmit)="fun(userForm.value)">
+<form 
+      #userForm="ngForm" 
+      (ngSubmit)="fun(userForm.value)" >
+
+
   <div class="form-group">
       <label>Enter Name: </label>
-      <input type="text" name="txtName" class="form-control" ngModel/>
+      <input type="text" name="txtName" class="form-control" 
+        ngModel
+      />
   </div>
   <div class="form-group">
     <label>Enter Username: </label>

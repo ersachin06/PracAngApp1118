@@ -43,9 +43,9 @@ export class C28ReactiveFormsComponent implements OnInit {
     
 
   addPost(data)
-{
-	console.log(data);
-}
+  {
+	  console.log(data);
+  }
 
 
 }
