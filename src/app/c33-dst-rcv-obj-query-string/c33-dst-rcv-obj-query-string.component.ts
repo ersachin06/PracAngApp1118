@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-c33-dst-rcv-obj-query-string',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class C33DstRcvObjQueryStringComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private activatedRoute:ActivatedRoute) { }
+data:any;
   ngOnInit() {
+    this.activatedRoute.queryParams.subscribe(d=>{
+      console.log(d);
+      this.data=d;
+    });
   }
 
 }

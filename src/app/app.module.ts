@@ -19,6 +19,7 @@ import { C30ChildNgcontentComponent } from './c30-child-ngcontent/c30-child-ngco
 import { C31NgcontentHomeComponent } from './c31-ngcontent-home/c31-ngcontent-home.component';
 import { C32SourceSendingObjComponent } from './c32-source-sending-obj/c32-source-sending-obj.component';
 import { C33DstRcvObjQueryStringComponent } from './c33-dst-rcv-obj-query-string/c33-dst-rcv-obj-query-string.component';
+import { C34LoginComponent } from './c34-login/c34-login.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,6 +36,7 @@ import { C33DstRcvObjQueryStringComponent } from './c33-dst-rcv-obj-query-string
     C31NgcontentHomeComponent,
     C32SourceSendingObjComponent,
     C33DstRcvObjQueryStringComponent,
+    C34LoginComponent,
     
   ],
   imports: [

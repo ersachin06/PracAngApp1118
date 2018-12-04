@@ -1,0 +1,32 @@
+<p>
+  c34-login works!
+</p>
+<div class="container">
+  <div class="row">
+      <div class="col-md-4 "></div>
+      <div class="col-md-4 ">
+         
+              <h3 class="title ">Login</h3>
+
+              <form >
+                  <label>Email</label>
+                  
+                  <input type="email" class="form-control" id="email" name="email"  placeholder="Email" [(ngModel)]="email">
+                  <label>Password</label>
+                  
+                  <input type="password" class="form-control" id="pwd" name="passowrd" placeholder="Password" [(ngModel)]="password">
+                  
+                  <button class="btn btn-danger  btn-round" (click)="login()">Login</button>
+                  <button class="btn btn-danger  btn-round" [routerLink]="['/tdfValidation']" routerLinkActive="active"  >Register</button>
+              </form>
+              <div >
+                  <a href="#" class="btn  btn-primary" >Forgot password?</a>
+              </div>
+         
+      </div>
+      <div class="col-md-4 "></div>
+  </div>
+<div class="footer register-footer text-center">
+
+</div>
+</div>
